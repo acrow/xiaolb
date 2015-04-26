@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>小喇叭</title>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body data-ng-app="xiaolb">
+<div class="page-header row">
+  <a href="#/home"><img src="./img/icon.jpg" width="100px" class="col-md-1"></a>
+  <h1 class="col-md-5">{{"app.head"|translate}} <small>{{"app.subhead"|translate}}</small></h1>
+  <div class="col-md-6 text-right">
+    <a href="#/login">登录</a>
+  	<select data-ng-model="lang">
+  		<option {{lang=='zh' ? 'selected' : ''}} value="zh">中文</option>
+  		<option {{lang=='en' ? 'selected' : ''}} value="en">English</option>
+  		<option {{lang=='jp' ? 'selected' : ''}} value="jp">日本語</option>
+  	</select>
+  	&nbsp;
+  </div>
+</div>
+ <div data-ng-view class="container text-center"></div>
+ <div class="info"></div>
+
+ <script type="text/javascript" src="js/lib/angular.js"></script>
+ <script type="text/javascript" src="js/lib/angular-route.js"></script>
+ <script type="text/javascript" src="js/lib/angular-resource.js"></script>
+ <script type="text/javascript" src="js/lib/angular-translate.js"></script>
+ <script type="text/javascript" src="js/app/app.js"></script>
+ <script type="text/javascript" src="js/app/controller/main.js"></script>
+ <script type="text/javascript" src="js/app/module/resource.js"></script>
+ <script type="text/javascript" src="js/app/common/translate.js"></script>
+ <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=RkM9Z0ujZ8xDwuR19bdLGUmO"></script>
+</body>
+</html>

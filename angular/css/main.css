@@ -1,0 +1,24 @@
+body
+{
+	font-family:Microsoft YaHei, SimSun, SimHei;
+	font-size: 62.5%;
+}
+
+
+.PageHeaderBlue
+{
+	background-color: blue;
+}
+
+
+.ng-invalid 
+{
+	border-right-color: #d9534f;
+	border-right-width: 0.5em;
+}
+
+.ng-valid 
+{
+	border-right-color: #5cb85c;
+	border-right-width: 0.5em;
+}
