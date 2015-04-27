@@ -1,10 +1,12 @@
 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-	<div class="col-md-2  col-sm-3 col-xs-4" data-ng-repeat="svc in svcs | orderBy:'order'">
-		
-		<a href="#/svc/{{svc.id}}">
+	<div class="col-md-2  col-sm-3 col-xs-4" data-ng-repeat="svc in svcs |filter:{'parent':null} | orderBy:'order'" >
+		<a href="#/svc">
 			<img src="../../img/svc/{{svc.icon}}" width="100%">
 			<h3>{{svc.key|translate}}</h3>
 		</a>
 	</div>
 </div>
 	
+<div ng-include="/htm/main/svc.html">
+
+</div>

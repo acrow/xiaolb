@@ -19,7 +19,7 @@ User.prototype.Save = function Save (callback) {
 	);
 }
 
-User.Login = function Login (name, password, callback) {
+User.Login = function Login (name,  password,  callback) {
 	var querySql = "SELECT * FROM t_user WHERE name='" + name + "'";
 	db.Exec(
 		querySql,

@@ -14,6 +14,10 @@ xiaolbApp.config(['$routeProvider', function ($routeProvider) {
 						templateUrl:'htm/main/login.html',
 						controller: 'login'
 					})
+					.when('/svc', {
+						templateUrl:'htm/svc.html',
+						controller: 'login'
+					})
 					.otherwise({
 				        redirectTo: '/home'
 				    });
