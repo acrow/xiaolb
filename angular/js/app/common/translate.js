@@ -6,6 +6,7 @@ var chinese = {
 	"btn.reg"	: "注册",
 	"btn.ok"	: "确认",
 	"btn.back"	: "返回",
+	"btn.send"	: "发送", 
 
 	"placeholder.username"			: "用户名",
 	"placeholder.password"			: "密码",
@@ -20,7 +21,14 @@ var chinese = {
 	"svc.weixiu"		: "家电维修",
 	"svc.paotui"		: "跑腿儿",
 	"svc.jiajiao"		: "课外家教",
-	"svc.waimai"		: "餐饮外卖"
+	"svc.waimai"		: "餐饮外卖",
+	"svc.zhilei"		: "纸类",
+	"svc.dianqi"		: "电器",
+	"svc.jiaju"			: "家具",
+	"svc.fuzhuang"		: "服装",
+	"svc.pingzi"		: "瓶瓶罐罐",
+	"svc.qita"			: "其它",
+
 };
 
 var english = {

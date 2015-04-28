@@ -8,12 +8,27 @@ angular.module('main',['resource', 'pascalprecht.translate'])
 		{},
 		function(result) {
 			$scope.svcs = result;
+			$rootScope.svcs = $scope.svcs;
 		},
 		function(err) {
 			$window.alert("fail:" + err);
 		}
 	);
+
 })
+
+.controller('svc', function($scope, $window, User, Service, $rootScope, $routeParams) {
+	$scope.svcs = $rootScope.svcs;
+
+	$scope.key = $routeParams.key;
+
+	$scope.selectedItems = [];
+
+	$scope.check = function(key) {
+		$scope.selectedItems.push(key);
+	};
+})
+
 
 // 登陆控制器
 .controller('login', function($scope, $window, User, $rootScope) {

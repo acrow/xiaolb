@@ -1,0 +1,12 @@
+<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+	<div  class="col-md-2  col-sm-3 col-xs-4"  data-ng-repeat="svc in svcs | filter:{'parent':key} | orderBy:'order'">
+		<img src="../../img/svc/{{svc.icon}}" width="100%">
+		<input type="button" value="{{'svc.'+svc.key|translate}}" ng-click="check(svc.key)">
+	</div>
+</div>
+<br/>
+<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+	<span ng-repeat="item in selectedItems">{{'svc.'+item|translate}}</span>
+	<br/>
+	<input type="button" value="{{'btn.send'|translate}}">
+</div>
